@@ -1,0 +1,28 @@
+$black:#080133;
+$orange:#FF7A00;
+$yellow:#FBD573;
+$yellowFade:#FBF8ED;
+$grey:grey;
+$buttonHover:#e9c66c;
+
+@mixin primaryButton {
+    color: $black;
+    font-size: 14px;
+    background: $yellow;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 30px;
+    border-radius: 44px;
+    box-shadow: rgba(150, 105, 105, 0.25) 0px 0px 22px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background: $buttonHover;
+    }
+}
+@mixin center($to) {
+    display: flex;
+    justify-content: $to;
+}
